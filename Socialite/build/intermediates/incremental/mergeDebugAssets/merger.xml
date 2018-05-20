@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/assets"/><source path="/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/debug/assets"/></dataSet></merger>
