@@ -32,12 +32,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         setTitle("Sign Up");
 
-        emailEditText = (EditText) findViewById(R.id.emailEditText);
-        passwordEditText = (EditText) findViewById(R.id.passwordEditText);
-        firstNameEditText = (EditText) findViewById(R.id.firstNameEditText);
-        lastNameEditText = (EditText) findViewById(R.id.lastNameEditText);
-        ImageView logoImageView = (ImageView) findViewById(R.id.logoImageView);
-        RelativeLayout backgroundLayout = (RelativeLayout) findViewById(R.id.backgroundLayout);
+        emailEditText = findViewById(R.id.emailEditText);
+        passwordEditText = findViewById(R.id.passwordEditText);
+        firstNameEditText = findViewById(R.id.firstNameEditText);
+        lastNameEditText = findViewById(R.id.lastNameEditText);
+        ImageView logoImageView = findViewById(R.id.logoImageView);
+        RelativeLayout backgroundLayout = findViewById(R.id.backgroundLayout);
         logoImageView.setOnClickListener(this); //setup for: if click onto logo, drop the keyboard
         backgroundLayout.setOnClickListener(this); // "    "
 
