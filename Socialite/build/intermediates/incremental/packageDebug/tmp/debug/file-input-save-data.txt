@@ -1,15 +1,11 @@
 #Internal package file, do not edit.
-#Mon May 21 03:13:28 CEST 2018
-1.base=/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/transforms/dexMerger/debug/2
-2.path=classes.dex
+#Mon May 21 23:45:17 CEST 2018
+1.base=/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
-2.base=/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/transforms/dexMerger/debug/2
-2.set=DEX
 1.baseType=DIRECTORY
-count=3
+count=2
 1.set=DEX
 0.path=classes.dex
 0.set=DEX
 0.base=/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/transforms/dexMerger/debug/1
-2.baseType=DIRECTORY
-1.path=classes2.dex
+1.path=classes.dex

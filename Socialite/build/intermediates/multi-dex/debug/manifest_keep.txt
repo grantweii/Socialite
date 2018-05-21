@@ -1,3 +1,3 @@
-# Referenced at /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/manifests/full/debug/AndroidManifest.xml:38
+# Referenced at /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/manifests/full/debug/AndroidManifest.xml:28
 -keep class com.parse.starter.StarterApplication { <init>(...); }
 

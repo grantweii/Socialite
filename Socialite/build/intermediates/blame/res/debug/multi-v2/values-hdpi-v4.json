@@ -4,7 +4,7 @@
             "outputFile": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/2b6ef0e41460c93e317a7d868eaebd34/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

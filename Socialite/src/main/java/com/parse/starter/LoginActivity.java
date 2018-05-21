@@ -17,6 +17,7 @@ import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
+import com.parse.starter.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener{
 
@@ -39,10 +40,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         logoImageView.setOnClickListener(this); //setup for: if click onto logo, drop the keyboard
         backgroundLayout.setOnClickListener(this); // "    "
 
-        //SHOWUSERLIST NEEDS TO BE CHANGED
-        if (ParseUser.getCurrentUser() != null) { //if already logged in, send to main page
-            showUserList();
-        }
     }
 
     public void loginClicked(View view) {
@@ -83,9 +80,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         return false;
     }
 
-    //THIS INTENT NEEDS TO BE CHANGED
-    public void showUserList() {
-        Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
-        startActivity(intent);
-    }
 }
