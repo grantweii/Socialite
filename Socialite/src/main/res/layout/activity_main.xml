@@ -24,30 +24,8 @@
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="70dp"
         app:srcCompat="@drawable/instagram" />
-
-    <EditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="210dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/signUpButton"
@@ -55,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="250dp"
         android:onClick="signUpClicked"
         android:text="Sign Up" />
 
@@ -65,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="190dp"
         android:text="Login"
         android:textSize="20sp" />
 

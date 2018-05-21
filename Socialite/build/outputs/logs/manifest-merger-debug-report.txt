@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
-INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
-INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
-INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
+ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
+INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
+INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
+INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
 MERGED from [com.google.android.gms:play-services:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/d1bb264efbcb7bdf20d1a858ee1b7478/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.4.0.aar/e545268550845386df62a9ff54bf01d6/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-cast:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-cast-9.4.0.aar/24ea67fb8ff6b8c6b2c8f0000304c3e2/AndroidManifest.xml:16:1-20:12
@@ -60,20 +60,20 @@ MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/grant/.gra
 MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.4.0.aar/7681ad53d26e0a4559dd2ecd5dafe378/AndroidManifest.xml:16:1-26:12
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/9cdba7e1fbe94aad2a6cc0e709c39ab0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-v4:23.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/8092de6a4a4c84b96a4c18c713f06495/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
-INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
-INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
+INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
+INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
+INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
 	package
 		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:10:5-32
 		INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml
 		INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml
-		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
+		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
 		INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml
-		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-37:12
+		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:1-38:12
 		INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:9:11-69
@@ -136,7 +136,7 @@ ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/
 	android:name
 		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:15:22-76
 application
-ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:17:5-35:19
+ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:17:5-36:19
 MERGED from [com.google.android.gms:play-services:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/d1bb264efbcb7bdf20d1a858ee1b7478/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/d1bb264efbcb7bdf20d1a858ee1b7478/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-cast-framework:9.4.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.4.0.aar/e545268550845386df62a9ff54bf01d6/AndroidManifest.xml:5:5-9:19
@@ -264,9 +264,13 @@ ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/
 	android:name
 		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:33:19-51
 activity#com.parse.starter.LoginActivity
-ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:34:9-60
+ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:34:9-51
 	android:name
 		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:34:19-48
+activity#com.parse.starter.SignUpActivity
+ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:35:9-61
+	android:name
+		ADDED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml:35:19-49
 uses-sdk
 INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/AndroidManifest.xml

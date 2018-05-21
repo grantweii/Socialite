@@ -28,38 +28,24 @@ import com.parse.SignUpCallback;
 
 public class WelcomePageActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
 
-    EditText usernameEditText;
-    EditText passwordEditText;
     TextView loginTextView;
 
-    public void showUserList() {
-        Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
+    public void loginClicked() {
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        Log.i("login", "clicked");
         startActivity(intent);
     }
 
     public void signUpClicked(View view) {
+        Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+        Log.i("sign up", "clicked");
+        startActivity(intent);
+    }
 
-
-        if (usernameEditText.getText().toString().matches("") || passwordEditText.getText().toString().matches("")) {
-            Toast.makeText(this, "Username and Password required!", Toast.LENGTH_SHORT).show();
-
-        } else {
-            ParseUser user = new ParseUser();
-            user.setUsername(usernameEditText.getText().toString());
-            user.setPassword(passwordEditText.getText().toString());
-
-            user.signUpInBackground(new SignUpCallback() {
-                @Override
-                public void done(ParseException e) {
-                    if (e == null) {
-                        Log.i("Sign Up", "success");
-                    } else {
-                        Toast.makeText(WelcomePageActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-        }
-
+    //TEMPORARY TO GET OFF MAIN SCREEN
+    public void showUserList() {
+        Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -71,8 +57,6 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
 
         loginTextView = (TextView) findViewById(R.id.loginTextView);
         loginTextView.setOnClickListener(this);
-        usernameEditText = (EditText) findViewById(R.id.usernameEditText);
-        passwordEditText = (EditText) findViewById(R.id.passwordEditText);
         ImageView logoImageView = (ImageView) findViewById(R.id.logoImageView);
         RelativeLayout backgroundLayout = (RelativeLayout) findViewById(R.id.backgroundLayout);
         logoImageView.setOnClickListener(this);
@@ -82,7 +66,7 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
             showUserList();
         }
 
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        ParseAnalytics.trackAppOpenedInBackground(getIntent()); //does this need to be on the activity that parse is used?
 
     }
 
@@ -90,7 +74,7 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.loginTextView) {
-            Log.i("Switch", "was tapped");
+            loginClicked();
         } else if (view.getId() == R.id.logoImageView || view.getId() == R.id.backgroundLayout) {
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
             inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
