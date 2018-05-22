@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "/Users/grant/Desktop/Socialite/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/res/values-w820dp/dimens.xml",
+                    "source": "/Users/grant/Desktop/Socialite/Socialite/src/main/res/values-w820dp/dimens.xml",
                     "from": {
                         "startLines": "12",
                         "startColumns": "4",

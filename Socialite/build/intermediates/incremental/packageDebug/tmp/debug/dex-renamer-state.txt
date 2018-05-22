@@ -1,7 +1,7 @@
-#Mon May 21 23:45:17 CEST 2018
-base.0=/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/transforms/dexMerger/debug/0
+#Tue May 22 17:57:41 CEST 2018
+base.0=/Users/grant/Desktop/Socialite/Socialite/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/transforms/dexMerger/debug/1
+base.1=/Users/grant/Desktop/Socialite/Socialite/build/intermediates/transforms/dexMerger/debug/1

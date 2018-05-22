@@ -61,8 +61,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 @Override
                 public void done(ParseException e) {
                     if (e != null) {
-//                        showExplore();
-                        Toast.makeText(SignUpActivity.this, "Sign up success",Toast.LENGTH_SHORT).show();
+                        showExplorePage();
                     } else {
                         Toast.makeText(SignUpActivity.this,e.getMessage(),Toast.LENGTH_SHORT).show();
                     }
@@ -72,11 +71,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
 
-//    public void showExplore() {
-//        Intent intent = new Intent(getApplicationContext(), ExploreActivity.class);
-//        Log.i("login", "clicked");
-//        startActivity(intent);
-//    }
+    public void showExplorePage() {
+        Intent intent = new Intent(getApplicationContext(), ExploreActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public void onClick(View view) {

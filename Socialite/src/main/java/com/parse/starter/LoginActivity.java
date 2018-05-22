@@ -54,13 +54,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 @Override
                 public void done(ParseUser user, ParseException e) {
                     if (user != null) {
-                        Log.i("Login", "Ok!");
+                        showExplorePage();
                     } else {
                         Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
         }
+    }
+
+    public void showExplorePage() {
+        Intent intent = new Intent(getApplicationContext(), ExploreActivity.class);
+        startActivity(intent);
     }
 
     @Override

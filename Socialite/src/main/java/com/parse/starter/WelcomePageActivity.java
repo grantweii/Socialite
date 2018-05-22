@@ -42,9 +42,8 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
         startActivity(intent);
     }
 
-    //TEMPORARY TO GET OFF MAIN SCREEN
-    public void showUserList() {
-        Intent intent = new Intent(getApplicationContext(), UserListActivity.class);
+    public void showExplorePage() {
+        Intent intent = new Intent(getApplicationContext(), ExploreActivity.class);
         startActivity(intent);
     }
 
@@ -63,7 +62,7 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
         backgroundLayout.setOnClickListener(this);
 
         if (ParseUser.getCurrentUser() != null) { //if already logged in, send to main page
-            showUserList();
+            showExplorePage();
         }
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent()); //does this need to be on the activity that parse is used?

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/grant/Desktop/Socialite/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/res/values/values.xml",
@@ -42,6 +42,25 @@
                     }
                 },
                 {
+                    "source": "/Users/grant/Desktop/Socialite/Socialite/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "369",
+                        "endLines": "13",
+                        "endColumns": "12",
+                        "endOffsets": "494"
+                    },
+                    "to": {
+                        "startLines": "700",
+                        "startColumns": "4",
+                        "startOffsets": "59378",
+                        "endLines": "702",
+                        "endColumns": "12",
+                        "endOffsets": "59503"
+                    }
+                },
+                {
                     "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/96cb44691ded91fa6fbf351ccae57a1a/res/values/values.xml",
                     "from": {
                         "startLines": "2,66",
@@ -61,7 +80,24 @@
                     }
                 },
                 {
-                    "source": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/debug/res/values/google_maps_api.xml",
+                    "source": "/Users/grant/Desktop/Socialite/Socialite/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "15,12,14,9,10,17,18,16",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "593,492,540,369,430,699,762,646",
+                        "endColumns": "52,46,52,60,60,62,54,52",
+                        "endOffsets": "641,534,588,425,486,757,812,694"
+                    },
+                    "to": {
+                        "startLines": "666,667,687,688,689,692,693,694",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55895,55948,58466,58519,58580,58765,58828,58883",
+                        "endColumns": "52,46,52,60,60,62,54,52",
+                        "endOffsets": "55943,55990,58514,58575,58636,58823,58878,58931"
+                    }
+                },
+                {
+                    "source": "/Users/grant/Desktop/Socialite/Socialite/src/debug/res/values/google_maps_api.xml",
                     "from": {
                         "startLines": "22",
                         "startColumns": "4",
@@ -148,7 +184,7 @@
                     }
                 },
                 {
-                    "source": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/res/values/dimens.xml",
+                    "source": "/Users/grant/Desktop/Socialite/Socialite/src/main/res/values/dimens.xml",
                     "from": {
                         "startLines": "10,11",
                         "startColumns": "4,4",
@@ -162,42 +198,6 @@
                         "startOffsets": "49940,49998",
                         "endColumns": "57,55",
                         "endOffsets": "49993,50049"
-                    }
-                },
-                {
-                    "source": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "15,12,14,9,10,17,18,16",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "593,492,540,369,430,699,762,646",
-                        "endColumns": "52,46,52,60,60,62,54,52",
-                        "endOffsets": "641,534,588,425,486,757,812,694"
-                    },
-                    "to": {
-                        "startLines": "666,667,687,688,689,692,693,694",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55895,55948,58466,58519,58580,58765,58828,58883",
-                        "endColumns": "52,46,52,60,60,62,54,52",
-                        "endOffsets": "55943,55990,58514,58575,58636,58823,58878,58931"
-                    }
-                },
-                {
-                    "source": "/Users/grant/Desktop/Parse-Server-Starter-Project/Socialite/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "11",
-                        "startColumns": "4",
-                        "startOffsets": "369",
-                        "endLines": "13",
-                        "endColumns": "12",
-                        "endOffsets": "494"
-                    },
-                    "to": {
-                        "startLines": "700",
-                        "startColumns": "4",
-                        "startOffsets": "59378",
-                        "endLines": "702",
-                        "endColumns": "12",
-                        "endOffsets": "59503"
                     }
                 }
             ]
