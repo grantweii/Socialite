@@ -2,18 +2,28 @@ package com.parse.starter;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.ToggleButton;
+
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
 import java.sql.Time;
 import java.util.Calendar;
@@ -32,15 +42,22 @@ public class CreateEventActivity extends AppCompatActivity {
     TimePickerDialog.OnTimeSetListener startTimeSetListener;
     TimePickerDialog.OnTimeSetListener endTimeSetListener;
 
+    boolean privateClicked = false;
+    boolean publicClicked = false;
+
     TextView startTimeTextView;
     TextView endTimeTextView;
     EditText descriptionEditText;
+
+    Drawable ogButtonBackground;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_event);
+
+        setTitle("Host Event");
 
         dateTextView = findViewById(R.id.dateTextView);
         createDatePickerDialog();
@@ -55,6 +72,22 @@ public class CreateEventActivity extends AppCompatActivity {
         locationEditText = findViewById(R.id.locationEditText);
         descriptionEditText = findViewById(R.id.descriptionEditText);
 
+        ogButtonBackground = privateButton.getBackground();
+
+    }
+
+    public void parseEventInfo() {
+        Intent intent = getIntent();
+        String user = intent.getStringExtra("username");
+
+//        ParseObject event = new ParseObject("Event");
+//        event.put("user", user);
+//        event.put("title", title);
+//        event.put("location", location);
+//        event.put("date", date);
+//        event.put("startTime", startTime);
+//        event.put("endTime", endTime);
+//        event.put("eventPhoto", file);
     }
 
     public void createDatePickerDialog() {
@@ -189,5 +222,32 @@ public class CreateEventActivity extends AppCompatActivity {
             }
         };
     }
+
+    public void hostClicked(View view) {
+
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void privateButtonClicked(View view) {
+        //check if public has been clicked and change to false if it has
+        if (publicClicked) {
+            publicClicked = false;
+            publicButton.setBackground(ogButtonBackground);
+        }
+        privateClicked = true;
+        privateButton.setBackground(getResources().getDrawable(R.drawable.button_color));
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void publicButtonClicked(View view) {
+        if (privateClicked) {
+            privateClicked = false;
+            privateButton.setBackground(ogButtonBackground);
+        }
+        publicClicked = true;
+        publicButton.setBackground(getResources().getDrawable(R.drawable.button_color));
+    }
+
 
 }
