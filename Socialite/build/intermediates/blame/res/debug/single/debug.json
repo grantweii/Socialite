@@ -320,6 +320,10 @@
         "source": "/Users/grant/Desktop/Socialite/Socialite/src/main/res/layout/activity_user_list.xml"
     },
     {
+        "merged": "/Users/grant/Desktop/Socialite/Socialite/build/intermediates/res/merged/debug/drawable_camera_image.png.flat",
+        "source": "/Users/grant/Desktop/Socialite/Socialite/src/main/res/drawable/camera_image.png"
+    },
+    {
         "merged": "/Users/grant/Desktop/Socialite/Socialite/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },

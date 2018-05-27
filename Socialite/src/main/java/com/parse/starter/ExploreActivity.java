@@ -1,7 +1,9 @@
 package com.parse.starter;
 
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -12,7 +14,11 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -29,8 +35,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.parse.ParseUser;
 
-public class ExploreActivity extends FragmentActivity implements OnMapReadyCallback {
+public class ExploreActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     FusedLocationProviderClient fusedLocationClient;
@@ -58,6 +65,20 @@ public class ExploreActivity extends FragmentActivity implements OnMapReadyCallb
         locationRequest.setFastestInterval(5000); //if there is another app updating more often, then simply take that location
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
+        //setup location call back
+        locationCallback = new LocationCallback() {
+            @Override
+            public void onLocationResult(LocationResult locationResult) {
+                super.onLocationResult(locationResult);
+                Log.i("callback", "working");
+                for (Location location : locationResult.getLocations()) {
+                    LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
+                    Log.i("lat", Double.toString(userLocation.latitude));
+                    Log.i("long", Double.toString(userLocation.longitude));
+
+                }
+            }
+        };
     }
 
     private void initMap() {
@@ -100,20 +121,6 @@ public class ExploreActivity extends FragmentActivity implements OnMapReadyCallb
             });
         }
 
-        //setup location call back
-        locationCallback = new LocationCallback() {
-            @Override
-            public void onLocationResult(LocationResult locationResult) {
-                super.onLocationResult(locationResult);
-                Log.i("callback", "working");
-                for (Location location : locationResult.getLocations()) {
-                    LatLng userLocation = new LatLng(location.getLatitude(), location.getLongitude());
-                    Log.i("lat", Double.toString(userLocation.latitude));
-                    Log.i("long", Double.toString(userLocation.longitude));
-
-                }
-            }
-        };
     }
 
     @Override
@@ -162,6 +169,28 @@ public class ExploreActivity extends FragmentActivity implements OnMapReadyCallb
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             }
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.share_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @TargetApi(Build.VERSION_CODES.M)
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.hostEvent) {
+            Intent intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.logout) {
+            ParseUser.logOut();
+
+            Intent intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }
