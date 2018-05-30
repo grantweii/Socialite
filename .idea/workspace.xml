@@ -28,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/compat/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/compat/R.java" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/constraint/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/constraint/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/coreui/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/coreui/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/coreutils/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/coreutils/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/fragment/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/fragment/R.java" />
@@ -37,29 +38,23 @@
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/v4/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/v4/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/com/google/android/gms/base/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/com/google/android/gms/base/R.java" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/com/google/android/gms/maps/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/com/google/android/gms/maps/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/com/parse/starter/R.java" afterPath="$PROJECT_DIR$/Socialite/build/generated/source/r/debug/com/parse/starter/R.java" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/blame/res/debug/multi-v2/debug.json" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/blame/res/debug/multi-v2/values.json" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/blame/res/debug/single/debug.json" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/compat/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/compat/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/compat/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/compat/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreui/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreui/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreui/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreui/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreutils/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreutils/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreutils/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreutils/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/fragment/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/fragment/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/fragment/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/fragment/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/mediacompat/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/mediacompat/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/mediacompat/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/mediacompat/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v4/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v4/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v4/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v4/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/google/android/gms/base/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/google/android/gms/base/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/compat/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/compat/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/constraint/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/constraint/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreui/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreui/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreutils/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/coreutils/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/fragment/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/fragment/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v4/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v4/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/google/android/gms/base/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/google/android/gms/base/R$id.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/google/android/gms/maps/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/google/android/gms/maps/R$id.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$1.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$1.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$2.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$2.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$3.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$3.class" />
@@ -67,9 +62,9 @@
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$5.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$5.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$6.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity$6.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/CreateEventActivity.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$color.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$color.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$dimen.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$dimen.class" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$drawable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$drawable.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/ExploreActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/ExploreActivity.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/LoginActivity$1.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/LoginActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/LoginActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/LoginActivity.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$id.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$id.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$integer.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$integer.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$layout.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$layout.class" />
@@ -78,34 +73,33 @@
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$string.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$string.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$style.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$style.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$styleable.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/R$styleable.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/SignUpActivity$1.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/SignUpActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/SignUpActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/SignUpActivity.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/UserFeedActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/UserFeedActivity.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/UserListActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/UserListActivity.class" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/WelcomePageActivity.class" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/classes/debug/com/parse/starter/WelcomePageActivity.class" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/YtO3FHqTtvnO4Kk1HcTRQngjOeo=" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/YtO3FHqTtvnO4Kk1HcTRQngjOeo=" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/res/debug/resources-debug.ap_" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/res/merged/debug/drawable_camera_image.png.flat" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/res/merged/debug/drawable_camera_image.png.flat" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/res/merged/debug/layout_activity_create_event.xml.flat" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/res/merged/debug/layout_activity_create_event.xml.flat" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/res/merged/debug/values_values.arsc.flat" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/symbols/debug/R.txt" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/compat/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/compat/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/compat/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/compat/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreui/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreui/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreui/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreui/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreutils/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreutils/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreutils/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreutils/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/fragment/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/fragment/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/fragment/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/fragment/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/animated/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/animated/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/animated/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/animated/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/mediacompat/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/mediacompat/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/mediacompat/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/mediacompat/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v4/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v4/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v4/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v4/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v7/appcompat/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v7/appcompat/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v7/appcompat/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v7/appcompat/R$drawable.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/google/android/gms/base/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/google/android/gms/base/R$drawable.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/compat/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/compat/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/constraint/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/constraint/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreui/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreui/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreutils/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/coreutils/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/fragment/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/fragment/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/animated/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/graphics/drawable/animated/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/mediacompat/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/mediacompat/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v4/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v4/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v7/appcompat/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/android/support/v7/appcompat/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/google/android/gms/base/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/google/android/gms/base/R$id.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/google/android/gms/maps/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/google/android/gms/maps/R$id.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$1.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$1.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$2.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$2.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$3.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$3.dex" />
@@ -113,9 +107,9 @@
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$5.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$5.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$6.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity$6.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/CreateEventActivity.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$color.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$color.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$dimen.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$dimen.dex" />
-      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$drawable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$drawable.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/ExploreActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/ExploreActivity.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/LoginActivity$1.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/LoginActivity$1.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/LoginActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/LoginActivity.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$id.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$id.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$integer.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$integer.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$layout.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$layout.dex" />
@@ -124,9 +118,18 @@
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$string.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$string.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$style.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$style.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$styleable.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/R$styleable.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/SignUpActivity$1.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/SignUpActivity$1.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/SignUpActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/SignUpActivity.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/UserFeedActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/UserFeedActivity.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/UserListActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/UserListActivity.dex" />
+      <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/WelcomePageActivity.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexBuilder/debug/25/com/parse/starter/WelcomePageActivity.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexMerger/debug/4/classes.dex" afterPath="$PROJECT_DIR$/Socialite/build/intermediates/transforms/dexMerger/debug/4/classes.dex" />
       <change beforePath="$PROJECT_DIR$/Socialite/build/outputs/apk/debug/Socialite-debug.apk" afterPath="$PROJECT_DIR$/Socialite/build/outputs/apk/debug/Socialite-debug.apk" />
       <change beforePath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/CreateEventActivity.java" afterPath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/CreateEventActivity.java" />
+      <change beforePath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java" afterPath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java" />
+      <change beforePath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java" afterPath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java" />
+      <change beforePath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/WelcomePageActivity.java" afterPath="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/WelcomePageActivity.java" />
+      <change beforePath="$PROJECT_DIR$/Socialite/src/main/res/drawable/camera_image.png" afterPath="$PROJECT_DIR$/Socialite/src/main/res/drawable/camera_image.png" />
       <change beforePath="$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml" afterPath="$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,11 +156,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExploreActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/ExploreActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+      <file leaf-file-name="activity_explore.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_explore.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -166,36 +172,55 @@
       <file leaf-file-name="CreateEventActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/CreateEventActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="248" column="70" lean-forward="true" selection-start-line="248" selection-start-column="70" selection-end-line="248" selection-end-column="70" />
+            <state relative-caret-position="90">
+              <caret line="408" column="48" lean-forward="true" selection-start-line="408" selection-start-column="48" selection-end-line="408" selection-end-column="48" />
               <folding>
-                <element signature="e#3671#4320#0" expanded="true" />
-                <element signature="e#4319#4320#0" expanded="true" />
-                <element signature="e#4417#5081#0" expanded="true" />
-                <element signature="e#5080#5081#0" expanded="true" />
-                <element signature="e#5116#6350#0" expanded="true" />
-                <element signature="e#6349#6350#0" expanded="true" />
-                <element signature="e#6396#7037#0" expanded="true" />
-                <element signature="e#7036#7037#0" expanded="true" />
-                <element signature="e#7070#8302#0" expanded="true" />
-                <element signature="e#8301#8302#0" expanded="true" />
+                <element signature="e#4984#5432#0" expanded="true" />
+                <element signature="e#5431#5432#0" expanded="true" />
+                <element signature="e#6325#6974#0" expanded="true" />
+                <element signature="e#6973#6974#0" expanded="true" />
+                <element signature="e#7071#7735#0" expanded="true" />
+                <element signature="e#7734#7735#0" expanded="true" />
+                <element signature="e#7770#9004#0" expanded="true" />
+                <element signature="e#9003#9004#0" expanded="true" />
+                <element signature="e#9050#9691#0" expanded="true" />
+                <element signature="e#9690#9691#0" expanded="true" />
+                <element signature="e#9724#10956#0" expanded="true" />
+                <element signature="e#10955#10956#0" expanded="true" />
+                <element signature="e#11004#11005#0" expanded="true" />
+                <element signature="e#11036#11037#0" expanded="true" />
+                <element signature="e#15881#16493#0" expanded="true" />
+                <element signature="e#16492#16493#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/values/colors.xml">
+      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/util/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="133">
+              <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_main.xml">
+      <file leaf-file-name="activity_sign_up.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_sign_up.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="1125">
+              <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_user_feed.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_user_feed.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
@@ -207,68 +232,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/build.gradle">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="button_color.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/button_color.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camera_image.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/camera_image.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Socialite/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="69" />
-              <folding />
+            <state relative-caret-position="765">
+              <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+              <folding>
+                <element signature="e#2053#2509#0" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="activity_create_event.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml">
-          <provider editor-type-id="android-designer2">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFeedActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserFeedActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+              <folding>
+                <element signature="e#1212#2609#0" expanded="true" />
+                <element signature="e#2608#2609#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserListActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+              <folding>
+                <element signature="e#2267#2776#0" expanded="true" />
+                <element signature="e#2775#2776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+              <folding>
+                <element signature="e#3107#3473#0" expanded="true" />
+                <element signature="e#3472#3473#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -298,6 +322,14 @@
       <find>onKey</find>
       <find>privateButtonClicked</find>
       <find>target</find>
+      <find>parse</find>
+      <find>toast</find>
+      <find>onrequest</find>
+      <find>o</find>
+      <find>photo</find>
+      <find>1</find>
+      <find>length</find>
+      <find>username is</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2182,21 +2214,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java" />
         <option value="$PROJECT_DIR$/Socialite/build.gradle" />
         <option value="$PROJECT_DIR$/Socialite/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/res/menu/share_menu.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserListActivity.java" />
         <option value="$PROJECT_DIR$/Socialite/src/main/res/layout/activity_explore.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/ExploreActivity.java" />
-        <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/WelcomePageActivity.java" />
         <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserFeedActivity.java" />
-        <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java" />
-        <option value="$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/res/drawable/colors.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/res/drawable/color.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/Socialite/src/main/res/drawable/button_color.xml" />
+        <option value="$PROJECT_DIR$/Socialite/src/main/res/layout/asd.xml" />
+        <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/WelcomePageActivity.java" />
+        <option value="$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml" />
+        <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java" />
+        <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java" />
         <option value="$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/CreateEventActivity.java" />
       </list>
     </option>
@@ -2295,7 +2328,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="Nexus_5X_API_26" />
     <property name="android.profiler.active" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/grant/Desktop/Socialite/Socialite/src/main/java/com/parse/starter/ExploreActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/grant/Desktop/Socialite/Socialite/src/main/res/layout/activity_create_event.xml" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2479,17 +2512,17 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.50304615" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5143603" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.49521324" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.49521324" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291536" sideWeight="0.49695387" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.49695387" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21845083" sideWeight="0.4906542" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.48912096" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.4856397" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24978241" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2525,7 +2558,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#2053#2509#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2556,16 +2592,22 @@
         <state relative-caret-position="1020">
           <caret line="83" column="47" lean-forward="false" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
           <folding>
-            <element signature="e#3671#4320#0" expanded="true" />
-            <element signature="e#4319#4320#0" expanded="true" />
-            <element signature="e#4417#5081#0" expanded="true" />
-            <element signature="e#5080#5081#0" expanded="true" />
-            <element signature="e#5116#6350#0" expanded="true" />
-            <element signature="e#6349#6350#0" expanded="true" />
-            <element signature="e#6396#7037#0" expanded="true" />
-            <element signature="e#7036#7037#0" expanded="true" />
-            <element signature="e#7070#8302#0" expanded="true" />
-            <element signature="e#8301#8302#0" expanded="true" />
+            <element signature="e#4984#5432#0" expanded="true" />
+            <element signature="e#5431#5432#0" expanded="true" />
+            <element signature="e#6325#6974#0" expanded="true" />
+            <element signature="e#6973#6974#0" expanded="true" />
+            <element signature="e#7071#7735#0" expanded="true" />
+            <element signature="e#7734#7735#0" expanded="true" />
+            <element signature="e#7770#9004#0" expanded="true" />
+            <element signature="e#9003#9004#0" expanded="true" />
+            <element signature="e#9050#9691#0" expanded="true" />
+            <element signature="e#9690#9691#0" expanded="true" />
+            <element signature="e#9724#10956#0" expanded="true" />
+            <element signature="e#10955#10956#0" expanded="true" />
+            <element signature="e#11004#11005#0" expanded="true" />
+            <element signature="e#11036#11037#0" expanded="true" />
+            <element signature="e#15881#16493#0" expanded="true" />
+            <element signature="e#16492#16493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2594,7 +2636,8 @@
         <state relative-caret-position="1095">
           <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
           <folding>
-            <element signature="e#6081#6082#0" expanded="false" />
+            <element signature="e#2267#2776#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2603,7 +2646,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#1212#2609#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2611,7 +2657,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#3107#3473#0" expanded="true" />
+            <element signature="e#3472#3473#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2730,33 +2779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/instagram.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_explore.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_user_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/menu/share_menu.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2764,116 +2786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_user_feed.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="142" column="27" lean-forward="false" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
-          <folding>
-            <element signature="e#6081#6082#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/StarterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserFeedActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="53" column="87" lean-forward="false" selection-start-line="53" selection-start-column="87" selection-end-line="53" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/WelcomePageActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="39" column="79" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_sign_up.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="54" column="24" lean-forward="false" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="20401" column="16" lean-forward="false" selection-start-line="20401" selection-start-column="16" selection-end-line="20401" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/ExploreActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -2889,26 +2801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/camera_image.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/button_color.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -2940,21 +2836,217 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/StarterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/asd.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_user_list.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/instagram.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/camera_image.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/drawable/button_color.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/content/ContextWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="749" column="27" lean-forward="true" selection-start-line="749" selection-start-column="27" selection-end-line="749" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="6142" column="16" lean-forward="false" selection-start-line="6142" selection-start-column="16" selection-end-line="6142" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/WelcomePageActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="60" column="49" lean-forward="false" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/ExploreActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="129" column="39" lean-forward="false" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserFeedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="e#1212#2609#0" expanded="true" />
+            <element signature="e#2608#2609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/UserListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="66" column="32" lean-forward="false" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+          <folding>
+            <element signature="e#2267#2776#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_explore.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_create_event.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_user_feed.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/res/layout/activity_sign_up.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/util/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/SignUpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+          <folding>
+            <element signature="e#3107#3473#0" expanded="true" />
+            <element signature="e#3472#3473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+          <folding>
+            <element signature="e#2053#2509#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Socialite/src/main/java/com/parse/starter/CreateEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="248" column="70" lean-forward="true" selection-start-line="248" selection-start-column="70" selection-end-line="248" selection-end-column="70" />
+        <state relative-caret-position="90">
+          <caret line="408" column="48" lean-forward="true" selection-start-line="408" selection-start-column="48" selection-end-line="408" selection-end-column="48" />
           <folding>
-            <element signature="e#3671#4320#0" expanded="true" />
-            <element signature="e#4319#4320#0" expanded="true" />
-            <element signature="e#4417#5081#0" expanded="true" />
-            <element signature="e#5080#5081#0" expanded="true" />
-            <element signature="e#5116#6350#0" expanded="true" />
-            <element signature="e#6349#6350#0" expanded="true" />
-            <element signature="e#6396#7037#0" expanded="true" />
-            <element signature="e#7036#7037#0" expanded="true" />
-            <element signature="e#7070#8302#0" expanded="true" />
-            <element signature="e#8301#8302#0" expanded="true" />
+            <element signature="e#4984#5432#0" expanded="true" />
+            <element signature="e#5431#5432#0" expanded="true" />
+            <element signature="e#6325#6974#0" expanded="true" />
+            <element signature="e#6973#6974#0" expanded="true" />
+            <element signature="e#7071#7735#0" expanded="true" />
+            <element signature="e#7734#7735#0" expanded="true" />
+            <element signature="e#7770#9004#0" expanded="true" />
+            <element signature="e#9003#9004#0" expanded="true" />
+            <element signature="e#9050#9691#0" expanded="true" />
+            <element signature="e#9690#9691#0" expanded="true" />
+            <element signature="e#9724#10956#0" expanded="true" />
+            <element signature="e#10955#10956#0" expanded="true" />
+            <element signature="e#11004#11005#0" expanded="true" />
+            <element signature="e#11036#11037#0" expanded="true" />
+            <element signature="e#15881#16493#0" expanded="true" />
+            <element signature="e#16492#16493#0" expanded="true" />
           </folding>
         </state>
       </provider>

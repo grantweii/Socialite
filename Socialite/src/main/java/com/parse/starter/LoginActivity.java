@@ -46,9 +46,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (emailEditText.getText().toString().matches("") || passwordEditText.getText().toString().matches("")) {
             Toast.makeText(this, "Email and Password required!", Toast.LENGTH_SHORT).show();
         } else {
-            ParseUser user = new ParseUser();
-            user.setEmail(emailEditText.getText().toString());
-            user.setPassword(passwordEditText.getText().toString());
+//            ParseUser user = new ParseUser();
+//            user.setUsername(emailEditText.getText().toString());
+////            user.setEmail(emailEditText.getText().toString());
+//            user.setPassword(passwordEditText.getText().toString());
 
             ParseUser.logInInBackground(emailEditText.getText().toString(), passwordEditText.getText().toString(), new LogInCallback() {
                 @Override
@@ -56,7 +57,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     if (user != null) {
                         showExplorePage();
                     } else {
-                        Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        if (e != null) {
+                            Toast.makeText(LoginActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
                     }
                 }
             });

@@ -1,30 +1,46 @@
 package com.parse.starter;
 
+import android.Manifest;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Build;
+import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
+import java.io.ByteArrayOutputStream;
 import java.sql.Time;
 import java.util.Calendar;
 import java.util.Date;
@@ -32,6 +48,7 @@ import java.util.Locale;
 
 public class CreateEventActivity extends AppCompatActivity {
 
+    FrameLayout backgroundPhotoLayout;
     ImageButton photoButton;
     Button privateButton;
     Button publicButton;
@@ -44,6 +61,7 @@ public class CreateEventActivity extends AppCompatActivity {
 
     boolean privateClicked = false;
     boolean publicClicked = false;
+    boolean eventPhoto = false;
 
     TextView startTimeTextView;
     TextView endTimeTextView;
@@ -51,6 +69,11 @@ public class CreateEventActivity extends AppCompatActivity {
 
     Drawable ogButtonBackground;
 
+    static final int EXTERNAL_STORAGE_PERMISSION_REQUEST = 102;
+    static final int EXTERNAL_STORAGE_REQUEST_CODE = 202;
+
+    ParseObject event;
+    Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +82,7 @@ public class CreateEventActivity extends AppCompatActivity {
 
         setTitle("Host Event");
 
+        backgroundPhotoLayout = findViewById(R.id.backgroundPhotoLayout);
         dateTextView = findViewById(R.id.dateTextView);
         createDatePickerDialog();
         startTimeTextView = findViewById(R.id.startTimeTextView);
@@ -74,20 +98,69 @@ public class CreateEventActivity extends AppCompatActivity {
 
         ogButtonBackground = privateButton.getBackground();
 
+        event = null;
+
     }
 
     public void parseEventInfo() {
-        Intent intent = getIntent();
-        String user = intent.getStringExtra("username");
+        int successes = 0;
 
-//        ParseObject event = new ParseObject("Event");
-//        event.put("user", user);
-//        event.put("title", title);
-//        event.put("location", location);
-//        event.put("date", date);
-//        event.put("startTime", startTime);
-//        event.put("endTime", endTime);
-//        event.put("eventPhoto", file);
+        if (!titleEditText.getText().toString().matches("")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event title is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!locationEditText.getText().toString().matches("")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event location is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!dateTextView.getText().toString().matches("Date")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event date is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!startTimeTextView.getText().toString().matches("Start Time")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event start time is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!endTimeTextView.getText().toString().matches("End Time")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event end time is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (eventPhoto) {
+            putEventPhoto();
+        }
+
+        if (successes >= 5) {
+            event = new ParseObject("Event");
+            event.put("email", ParseUser.getCurrentUser().getEmail());
+            event.put("title", titleEditText.getText().toString());
+            event.put("location", locationEditText.getText().toString());
+            event.put("date", dateTextView.getText().toString());
+            event.put("startTime", startTimeTextView.getText().toString());
+            event.put("endTime", endTimeTextView.getText().toString());
+            event.saveInBackground(new SaveCallback() {
+                @Override
+                public void done(ParseException e) {
+                    if (e == null) {
+                        Toast.makeText(CreateEventActivity.this,"Event created!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(CreateEventActivity.this,"Failed to create event!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        } else {
+            Log.i("successes", Integer.toString(successes));
+        }
+
     }
 
     public void createDatePickerDialog() {
@@ -224,7 +297,7 @@ public class CreateEventActivity extends AppCompatActivity {
     }
 
     public void hostClicked(View view) {
-
+        parseEventInfo();
     }
 
 
@@ -250,4 +323,98 @@ public class CreateEventActivity extends AppCompatActivity {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    public void photoButtonClicked(View view) {
+        if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, EXTERNAL_STORAGE_PERMISSION_REQUEST);
+        } else {
+            selectPhoto();
+        }
+    }
+
+    public void selectPhoto() {
+        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, EXTERNAL_STORAGE_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == EXTERNAL_STORAGE_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
+            Uri selectedPhoto = data.getData();
+            try {
+                bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedPhoto);
+
+                ImageView imageView = new ImageView(getApplicationContext());
+                imageView.setLayoutParams(new ViewGroup.LayoutParams(
+                        ViewGroup.LayoutParams.MATCH_PARENT,
+                        ViewGroup.LayoutParams.MATCH_PARENT
+                )); //sets imageview layout programmatically
+
+                imageView.setImageBitmap(bitmap);
+                backgroundPhotoLayout.addView(imageView);
+                eventPhoto = true;
+//                Log.i("Image selected", "Good work");
+//
+//                //upload file onto parse server
+//                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+//                bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+//                byte[] byteArray = stream.toByteArray();
+//                ParseFile file = new ParseFile("eventPhoto.png", byteArray);
+//                ParseObject temp = new ParseObject("temp");
+//                temp.put("eventPhoto", file);
+////                event.put("eventPhoto", file);
+////                event.saveInBackground(new SaveCallback() {
+//                temp.saveInBackground(new SaveCallback() {
+//                    @Override
+//                    public void done(ParseException e) {
+//                        if (e == null) {
+//                            Toast.makeText(CreateEventActivity.this, "Photo has been uploaded!", Toast.LENGTH_SHORT).show();
+//                        } else {
+//                            Toast.makeText(CreateEventActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }
+//                });
+            } catch (Exception e) {
+                e.printStackTrace();
+                Toast.makeText(CreateEventActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        switch (requestCode) {
+            case EXTERNAL_STORAGE_PERMISSION_REQUEST:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    selectPhoto();
+                } else {
+                    Toast.makeText(CreateEventActivity.this, "You must accept external storage permissions to upload a photo!", Toast.LENGTH_SHORT).show();
+                }
+        }
+    }
+
+    public void putEventPhoto() {
+        //upload file onto parse server
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
+        ParseFile file = new ParseFile("eventPhoto.png", byteArray);
+        event.put("eventPhoto", file);
+        event.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e == null) {
+                    Log.i("event photo", "uploaded onto parse server");
+//                    Toast.makeText(CreateEventActivity.this, "Photo has been uploaded!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Log.i("event photo", "error uploading onto parse server");
+//                    Toast.makeText(CreateEventActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
 }

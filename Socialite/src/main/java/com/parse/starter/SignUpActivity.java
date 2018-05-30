@@ -44,23 +44,29 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void signUpClicked(View view) {
-        if (firstNameEditText.getText().toString().matches("")) {
+        if (firstNameEditText.getText().toString().matches("")) { //if first name is empty
             Toast.makeText(this, "Name required!", Toast.LENGTH_SHORT).show();
         } else if (emailEditText.getText().toString().matches("") || passwordEditText.getText().toString().matches("")) {
             Toast.makeText(this, "Email and Password required!", Toast.LENGTH_SHORT).show();
         } else {
             ParseUser user = new ParseUser();
+            user.setUsername(emailEditText.getText().toString());
             user.setEmail(emailEditText.getText().toString());
             user.setPassword(passwordEditText.getText().toString());
-            if (lastNameEditText.getText().toString().matches("")) {
-                user.put("Name", firstNameEditText.getText().toString());
-            } else {
-                user.put("Name", firstNameEditText.getText().toString() + " " + lastNameEditText.getText().toString());
+//            Log.i("Lastnameedittext", lastNameEditText.getText().toString());
+            if (lastNameEditText.getText().toString().matches("")) { //if last name is empty THATS FINE
+                user.put("name", firstNameEditText.getText().toString());
+            } else if (!lastNameEditText.getText().toString().matches("") && !firstNameEditText.getText().toString().matches("")){
+                //this else if is not really necessary, the first name was checked above
+                user.put("name", firstNameEditText.getText().toString() + " " + lastNameEditText.getText().toString());
             }
+//            Log.i("full name", firstNameEditText.getText().toString() + " " + lastNameEditText.getText().toString());
+//            Log.i("username", user.getUsername());
+//            Log.i("email", user.getEmail());
             user.signUpInBackground(new SignUpCallback() {
                 @Override
                 public void done(ParseException e) {
-                    if (e != null) {
+                    if (e == null) {
                         showExplorePage();
                     } else {
                         Toast.makeText(SignUpActivity.this,e.getMessage(),Toast.LENGTH_SHORT).show();
