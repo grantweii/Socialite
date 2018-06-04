@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 23 23:40:48 CEST 2018
+#Sun Jun 03 20:29:30 CEST 2018
 1.base=/Users/grant/Desktop/Socialite/Socialite/build/intermediates/transforms/dexMerger/debug/4
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

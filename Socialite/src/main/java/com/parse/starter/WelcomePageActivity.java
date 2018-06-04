@@ -58,14 +58,14 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
         loginTextView.setOnClickListener(this);
         ImageView logoImageView = (ImageView) findViewById(R.id.logoImageView);
         RelativeLayout backgroundLayout = (RelativeLayout) findViewById(R.id.backgroundLayout);
-//        logoImageView.setOnClickListener(this);
-//        backgroundLayout.setOnClickListener(this);
+        logoImageView.setOnClickListener(this);
+        backgroundLayout.setOnClickListener(this);
 
         if (ParseUser.getCurrentUser() != null) { //if already logged in, send to main page
             showExplorePage();
         }
 
-//        ParseAnalytics.trackAppOpenedInBackground(getIntent()); //does this need to be on the activity that parse is used?
+        ParseAnalytics.trackAppOpenedInBackground(getIntent()); //does this need to be on the activity that parse is used?
 
     }
 
@@ -74,11 +74,12 @@ public class WelcomePageActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View view) {
         if (view.getId() == R.id.loginTextView) {
             loginClicked();
+        } else if (view.getId() == R.id.logoImageView || view.getId() == R.id.backgroundLayout) {
+            if (this.getCurrentFocus() != null) {
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+            }
         }
-//        else if (view.getId() == R.id.logoImageView || view.getId() == R.id.backgroundLayout) {
-//            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-//            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-//        }
     }
 
     @Override

@@ -53,16 +53,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             user.setUsername(emailEditText.getText().toString());
             user.setEmail(emailEditText.getText().toString());
             user.setPassword(passwordEditText.getText().toString());
-//            Log.i("Lastnameedittext", lastNameEditText.getText().toString());
             if (lastNameEditText.getText().toString().matches("")) { //if last name is empty THATS FINE
                 user.put("name", firstNameEditText.getText().toString());
             } else if (!lastNameEditText.getText().toString().matches("") && !firstNameEditText.getText().toString().matches("")){
                 //this else if is not really necessary, the first name was checked above
                 user.put("name", firstNameEditText.getText().toString() + " " + lastNameEditText.getText().toString());
             }
-//            Log.i("full name", firstNameEditText.getText().toString() + " " + lastNameEditText.getText().toString());
-//            Log.i("username", user.getUsername());
-//            Log.i("email", user.getEmail());
+            user.put("displayPicture", null);
             user.signUpInBackground(new SignUpCallback() {
                 @Override
                 public void done(ParseException e) {
@@ -85,9 +82,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.logoImageView || view.getId() == R.id.backgroundLayout) {
-            //if either the logo or background was clicked (essentially everything else), hide keyboard
-            InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-            inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+            if (this.getCurrentFocus() != null) {
+                InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+                inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+            }
         }
     }
 

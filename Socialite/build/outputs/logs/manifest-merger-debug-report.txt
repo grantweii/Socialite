@@ -1,57 +1,57 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
-INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
-INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
-INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
-MERGED from [com.android.support:multidex:1.0.3] /Users/grant/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/b2a4c1617ceb39a0f3638f7665504f0a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6458b8f999f7d6e70bdc8249013ddff0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:17:1-32:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0e780692699c7e5183a902271c17376c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0fe027a26d18da3926542cc73a8c2e32/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8cc439fe58b8bdae6f20e2070a3c8cda/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/45983f1886110c341345f973bdf88f75/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ddb84bef64c0bda6c85ae119304e2554/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/5027bf53222a076e0834eeb81c51d334/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/96cb44691ded91fa6fbf351ccae57a1a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b8f46a9f918d150dadc65f2ef282beaf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ae3da982270dda3784e37921daefb0f7/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/aa6b10f2522c566083cd4d2c59a7010d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/26aeb30bdaaec349c31972da80a470fc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fcafd170d5f3883f6df5010bf73b7a51/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/775c52a1d92b6a40a628dabe45547612/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
-INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
-INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
+ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
+INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
+INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
+INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
+MERGED from [com.android.support:multidex:1.0.3] /Users/grant/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/917461dadbf9c626810af5ec6843cd12/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e4c402e395bb8f8100e634d7dcd25fe/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:17:1-32:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c447fc3676ad0fb4832f885880252bcb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/fcac5d540b7961a7c6ac9fa1869e1a4a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/8c9927af413aa1a459b1b666a1d9e27f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/56f0d4077e5c38760d732a1dfbc9e89c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/2a0b267533be6c25fcc88f709052a0d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/0331d6ad847b5b8c45085ae9f7bfd7b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/806b6aceaa06cbbb399cc77e7b23b2ed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b465911eff2a649b555b33b033487896/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/e300d68c75ee3ccf9ebb208ba1ca6feb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/034aaf649d8e1ad97ea3ce154f599cd2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c69393673825027088e74babedc29b05/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/45cfeffa5c12e988ec9fffe443bcf83e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/42231b7abc77effdf69401a3d3e645cc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e8d3124d7383cf5326922a01000ee62/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
+INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
+INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
 	package
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:10:5-32
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
-		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
+		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
-		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-57:12
+		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:1-59:12
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:9:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:12:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:12:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:23:5-79
 	android:name
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -63,25 +63,25 @@ ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:15:22-76
 application
-ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:17:5-55:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6458b8f999f7d6e70bdc8249013ddff0/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6458b8f999f7d6e70bdc8249013ddff0/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0e780692699c7e5183a902271c17376c/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0e780692699c7e5183a902271c17376c/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0fe027a26d18da3926542cc73a8c2e32/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0fe027a26d18da3926542cc73a8c2e32/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8cc439fe58b8bdae6f20e2070a3c8cda/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8cc439fe58b8bdae6f20e2070a3c8cda/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:25:5-29:19
+ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:17:5-57:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e4c402e395bb8f8100e634d7dcd25fe/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e4c402e395bb8f8100e634d7dcd25fe/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/fcac5d540b7961a7c6ac9fa1869e1a4a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/fcac5d540b7961a7c6ac9fa1869e1a4a/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/8c9927af413aa1a459b1b666a1d9e27f/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/8c9927af413aa1a459b1b666a1d9e27f/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/56f0d4077e5c38760d732a1dfbc9e89c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/56f0d4077e5c38760d732a1dfbc9e89c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:25:5-29:19
 	android:label
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:21:9-41
 	android:icon
@@ -89,7 +89,7 @@ MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.grad
 	android:allowBackup
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:22:9-40
+		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:22:9-65
 	android:name
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:18:9-43
 activity#com.parse.starter.WelcomePageActivity
@@ -132,8 +132,8 @@ ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:45:13-58
 meta-data#com.google.android.gms.version
 ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:47:9-49:69
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:23:9-25:69
 	android:value
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:49:13-66
 	android:name
@@ -145,59 +145,67 @@ ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:52:13-44
 activity#com.parse.starter.CreateEventActivity
-ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:54:9-66
+ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:54:9-57
 	android:name
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:54:19-54
+activity#com.parse.starter.ProfileActivity
+ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:55:9-53
+	android:name
+		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:55:19-50
+activity#com.parse.starter.EditProfileActivity
+ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:56:9-66
+	android:name
+		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml:56:19-54
 uses-sdk
 INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
-MERGED from [com.android.support:multidex:1.0.3] /Users/grant/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/b2a4c1617ceb39a0f3638f7665504f0a/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.3] /Users/grant/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/b2a4c1617ceb39a0f3638f7665504f0a/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6458b8f999f7d6e70bdc8249013ddff0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6458b8f999f7d6e70bdc8249013ddff0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0e780692699c7e5183a902271c17376c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0e780692699c7e5183a902271c17376c/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0fe027a26d18da3926542cc73a8c2e32/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/0fe027a26d18da3926542cc73a8c2e32/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8cc439fe58b8bdae6f20e2070a3c8cda/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/8cc439fe58b8bdae6f20e2070a3c8cda/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/64ee7fbb9605e82b1974defbe78769ad/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/45983f1886110c341345f973bdf88f75/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/45983f1886110c341345f973bdf88f75/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ddb84bef64c0bda6c85ae119304e2554/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/ddb84bef64c0bda6c85ae119304e2554/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/5027bf53222a076e0834eeb81c51d334/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/5027bf53222a076e0834eeb81c51d334/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/96cb44691ded91fa6fbf351ccae57a1a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/96cb44691ded91fa6fbf351ccae57a1a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b8f46a9f918d150dadc65f2ef282beaf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b8f46a9f918d150dadc65f2ef282beaf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ae3da982270dda3784e37921daefb0f7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/ae3da982270dda3784e37921daefb0f7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/aa6b10f2522c566083cd4d2c59a7010d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/aa6b10f2522c566083cd4d2c59a7010d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/26aeb30bdaaec349c31972da80a470fc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/26aeb30bdaaec349c31972da80a470fc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fcafd170d5f3883f6df5010bf73b7a51/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/fcafd170d5f3883f6df5010bf73b7a51/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/775c52a1d92b6a40a628dabe45547612/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/775c52a1d92b6a40a628dabe45547612/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.3] /Users/grant/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/917461dadbf9c626810af5ec6843cd12/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] /Users/grant/.gradle/caches/transforms-1/files-1.1/multidex-1.0.3.aar/917461dadbf9c626810af5ec6843cd12/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e4c402e395bb8f8100e634d7dcd25fe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e4c402e395bb8f8100e634d7dcd25fe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c447fc3676ad0fb4832f885880252bcb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c447fc3676ad0fb4832f885880252bcb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/fcac5d540b7961a7c6ac9fa1869e1a4a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/fcac5d540b7961a7c6ac9fa1869e1a4a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/8c9927af413aa1a459b1b666a1d9e27f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/8c9927af413aa1a459b1b666a1d9e27f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/56f0d4077e5c38760d732a1dfbc9e89c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/56f0d4077e5c38760d732a1dfbc9e89c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/4082fed6edafcae9159514497d32a75a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/2a0b267533be6c25fcc88f709052a0d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/2a0b267533be6c25fcc88f709052a0d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/0331d6ad847b5b8c45085ae9f7bfd7b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/0331d6ad847b5b8c45085ae9f7bfd7b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/806b6aceaa06cbbb399cc77e7b23b2ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/806b6aceaa06cbbb399cc77e7b23b2ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b465911eff2a649b555b33b033487896/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b465911eff2a649b555b33b033487896/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/e300d68c75ee3ccf9ebb208ba1ca6feb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/e300d68c75ee3ccf9ebb208ba1ca6feb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/034aaf649d8e1ad97ea3ce154f599cd2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/034aaf649d8e1ad97ea3ce154f599cd2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c69393673825027088e74babedc29b05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c69393673825027088e74babedc29b05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/45cfeffa5c12e988ec9fffe443bcf83e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/45cfeffa5c12e988ec9fffe443bcf83e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/42231b7abc77effdf69401a3d3e645cc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/42231b7abc77effdf69401a3d3e645cc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e8d3124d7383cf5326922a01000ee62/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e8d3124d7383cf5326922a01000ee62/AndroidManifest.xml:20:5-44
 INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
@@ -207,24 +215,24 @@ INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.
 		ADDED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 		INJECTED from /Users/grant/Desktop/Socialite/Socialite/src/main/AndroidManifest.xml
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/55578eec7e95bcecf352a9e3aaa2239d/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/7b59c54efdf4ceca65d15e2d338b3bce/AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/a8cee08ae70ecaca7f53f040e7ebe052/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/grant/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/74ffd1e1ce6aaa7f5723e9fbfb8220fa/AndroidManifest.xml:24:13-79
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/4cbe907a385472e70ab6b1d950b3df4d/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/125a3538a05f08595e17d16ce7245832/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bb4b44c392396a95007c1b557e6c1708/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/grant/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/d1659b97025a33bd8ce6173c236adcd8/AndroidManifest.xml:27:13-51

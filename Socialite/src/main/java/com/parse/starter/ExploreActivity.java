@@ -2,16 +2,13 @@ package com.parse.starter;
 
 import android.Manifest;
 import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.TypedArray;
 import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -31,10 +29,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.parse.ParseUser;
 
 public class ExploreActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -44,11 +39,15 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
     LocationRequest locationRequest;
     LocationCallback locationCallback;
     static final int LOCATION_PERMISSION_REQUEST = 101;
-
+    Toolbar toolbar;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         if (Build.VERSION.SDK_INT >= 23) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -102,6 +101,15 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
     public void onMapReady(GoogleMap googleMap) {
         Toast.makeText(this, "Map is ready", Toast.LENGTH_SHORT).show();
         mMap = googleMap;
+
+        //don't really know how this works
+        //but it gets the height of the action bar (which is different depending on the device)
+        final TypedArray styledAttributes = getApplicationContext().getTheme().obtainStyledAttributes(
+                new int[] { android.R.attr.actionBarSize });
+        int mActionBarSize = (int) styledAttributes.getDimension(0, 0);
+        styledAttributes.recycle();
+
+        mMap.setPadding(0,mActionBarSize,0,0);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             Log.i("onMapReady", "permission has been granted");
@@ -174,7 +182,7 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.share_menu, menu);
+        menuInflater.inflate(R.menu.action_bar, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -183,6 +191,9 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.hostEvent) {
             Intent intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.profile) {
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
             startActivity(intent);
         } else if (item.getItemId() == R.id.logout) {
             ParseUser.logOut();

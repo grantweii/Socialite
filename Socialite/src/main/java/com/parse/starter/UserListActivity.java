@@ -91,7 +91,7 @@ public class UserListActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.share_menu, menu); //creates menu dropdown?
+        menuInflater.inflate(R.menu.action_bar, menu); //creates menu dropdown?
         return super.onCreateOptionsMenu(menu);
     }
 

@@ -102,67 +102,6 @@ public class CreateEventActivity extends AppCompatActivity {
 
     }
 
-    public void parseEventInfo() {
-        int successes = 0;
-
-        if (!titleEditText.getText().toString().matches("")) {
-            successes++;
-        } else {
-            Toast.makeText(this, "Event title is required!", Toast.LENGTH_SHORT).show();
-        }
-
-        if (!locationEditText.getText().toString().matches("")) {
-            successes++;
-        } else {
-            Toast.makeText(this, "Event location is required!", Toast.LENGTH_SHORT).show();
-        }
-
-        if (!dateTextView.getText().toString().matches("Date")) {
-            successes++;
-        } else {
-            Toast.makeText(this, "Event date is required!", Toast.LENGTH_SHORT).show();
-        }
-
-        if (!startTimeTextView.getText().toString().matches("Start Time")) {
-            successes++;
-        } else {
-            Toast.makeText(this, "Event start time is required!", Toast.LENGTH_SHORT).show();
-        }
-
-        if (!endTimeTextView.getText().toString().matches("End Time")) {
-            successes++;
-        } else {
-            Toast.makeText(this, "Event end time is required!", Toast.LENGTH_SHORT).show();
-        }
-
-        if (eventPhoto) {
-            putEventPhoto();
-        }
-
-        if (successes >= 5) {
-            event = new ParseObject("Event");
-            event.put("email", ParseUser.getCurrentUser().getEmail());
-            event.put("title", titleEditText.getText().toString());
-            event.put("location", locationEditText.getText().toString());
-            event.put("date", dateTextView.getText().toString());
-            event.put("startTime", startTimeTextView.getText().toString());
-            event.put("endTime", endTimeTextView.getText().toString());
-            event.saveInBackground(new SaveCallback() {
-                @Override
-                public void done(ParseException e) {
-                    if (e == null) {
-                        Toast.makeText(CreateEventActivity.this,"Event created!", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(CreateEventActivity.this,"Failed to create event!", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-        } else {
-            Log.i("successes", Integer.toString(successes));
-        }
-
-    }
-
     public void createDatePickerDialog() {
         final Calendar c = Calendar.getInstance();
 
@@ -297,7 +236,63 @@ public class CreateEventActivity extends AppCompatActivity {
     }
 
     public void hostClicked(View view) {
-        parseEventInfo();
+        int successes = 0;
+
+        if (!titleEditText.getText().toString().matches("")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event title is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!locationEditText.getText().toString().matches("")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event location is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!dateTextView.getText().toString().matches("Date")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event date is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!startTimeTextView.getText().toString().matches("Start Time")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event start time is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (!endTimeTextView.getText().toString().matches("End Time")) {
+            successes++;
+        } else {
+            Toast.makeText(this, "Event end time is required!", Toast.LENGTH_SHORT).show();
+        }
+
+        if (eventPhoto) {
+            putEventPhoto();
+        }
+
+        if (successes >= 5) {
+            event = new ParseObject("Event");
+            event.put("email", ParseUser.getCurrentUser().getEmail());
+            event.put("title", titleEditText.getText().toString());
+            event.put("location", locationEditText.getText().toString());
+            event.put("date", dateTextView.getText().toString());
+            event.put("startTime", startTimeTextView.getText().toString());
+            event.put("endTime", endTimeTextView.getText().toString());
+            event.saveInBackground(new SaveCallback() {
+                @Override
+                public void done(ParseException e) {
+                    if (e == null) {
+                        Toast.makeText(CreateEventActivity.this,"Event created!", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(CreateEventActivity.this,"Failed to create event!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        } else {
+            Log.i("successes", Integer.toString(successes));
+        }
     }
 
 
