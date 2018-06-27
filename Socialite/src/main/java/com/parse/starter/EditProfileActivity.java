@@ -56,6 +56,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
     boolean profileChanged = false;
     boolean profilePicChanged = false;
+    boolean isLookingForChanged = false;
 
     static final int EXTERNAL_STORAGE_PERMISSION_REQUEST = 102;
     static final int EXTERNAL_STORAGE_REQUEST_CODE = 202;
@@ -65,17 +66,17 @@ public class EditProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_edit_profile);
 
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-        setTitle("Profile");
+        setTitle("Edit Profile");
 
         parentLinearLayout = findViewById(R.id.parentLinearLayout);
         profilePicImageButton = findViewById(R.id.profilePicImageButton);
         nameLinearLayout = findViewById(R.id.nameLinearLayout);
         nameTextView = findViewById(R.id.nameTextView);
-        isLookingForEditText = findViewById(R.id.lookingForEditText);
+        isLookingForEditText = (EditText) findViewById(R.id.isLookingForEditText);
         hobbiesScrollLayout = findViewById(R.id.hobbiesScrollLayout);
         interestedInScrollLayout = findViewById(R.id.interestedInScrollLayout);
         wentToScrollLayout = findViewById(R.id.wentToScrollLayout);
@@ -90,6 +91,7 @@ public class EditProfileActivity extends AppCompatActivity {
     }
 
 
+    // not sure if onResume is necessary
     @Override
     protected void onResume() {
         super.onResume();
@@ -215,6 +217,10 @@ public class EditProfileActivity extends AppCompatActivity {
         nameTextView.setText(name);
     }
 
+    /**
+     * changes profile pic when it is clicked
+     * @param view
+     */
     @RequiresApi(api = Build.VERSION_CODES.M)
     public void profilePicClicked(View view) {
         if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -259,6 +265,9 @@ public class EditProfileActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * uploads profile pic onto server
+     */
     public void saveProfilePic() {
         //upload file onto parse server
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -280,21 +289,37 @@ public class EditProfileActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * saves profile pic and is looking for if they have been changed
+     * if no changes, show toast and go back to ProfileActivity
+     * @param view
+     */
     public void saveClicked(View view) {
         if (profilePicChanged) {
             saveProfilePic();
         }
         saveIsLookingFor();
+        if (!(isLookingForChanged || profileChanged)) {
+            Toast.makeText(EditProfileActivity.this, "No changes have been made.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+            startActivity(intent);
+        }
     }
 
+    /**
+     * saves is looking for and changes back to ProfileActivity page
+     */
     public void saveIsLookingFor() {
         if (ParseUser.getCurrentUser().getString("isLookingFor") != isLookingForEditText.getText().toString()) {
+            isLookingForChanged = true;
             ParseUser.getCurrentUser().put("isLookingFor", isLookingForEditText.getText().toString());
             ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
                 @Override
                 public void done(ParseException e) {
                     if (e == null) {
                         Log.i("is looking for", "saved");
+                        Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                        startActivity(intent);
                     } else {
                         Log.i("is looking for", "could not save, e = null");
                     }

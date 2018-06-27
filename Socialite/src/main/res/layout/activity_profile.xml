@@ -1,126 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ProfileActivity">
 
-    <LinearLayout
-        android:id="@+id/parentLinearLayout"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/nameLinearLayout"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
 
-            <ImageButton
-                android:id="@+id/profilePicImageButton"
-                android:layout_width="80dp"
+            <LinearLayout
+                android:id="@+id/nameLinearLayout"
+                android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:onClick="profilePicClicked"
-                app:srcCompat="@drawable/default_profile_pic" />
+                android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/profilePicImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:srcCompat="@drawable/default_profile_pic" />
+
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lookingForLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lookingForTextView"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="is looking for..."
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lookingForText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/nameTextView"
+                android:id="@+id/hobbiesTextView"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/lookingForLinearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/lookingForTextView"
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="is looking for..."
+                android:text="has hobbies..."
                 android:textSize="18sp" />
 
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:id="@+id/hobbiesScrollLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
             <TextView
-                android:id="@+id/lookingForText"
+                android:id="@+id/interestedInTextView"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textSize="24sp" />
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="is interested in..."
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:id="@+id/interestedInScrollLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/wentToTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="went to..."
+                android:textSize="18sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:id="@+id/wentToScrollLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </HorizontalScrollView>
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/hobbiesTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="has hobbies..."
-            android:textSize="18sp" />
+    </ScrollView>
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:id="@+id/hobbiesScrollLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" />
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/interestedInTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="is interested in..."
-            android:textSize="18sp" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:id="@+id/interestedInScrollLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" />
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/wentToTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="went to..."
-            android:textSize="18sp" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <LinearLayout
-                android:id="@+id/wentToScrollLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" />
-        </HorizontalScrollView>
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>

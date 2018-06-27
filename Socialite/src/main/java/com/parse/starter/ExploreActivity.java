@@ -8,6 +8,7 @@ import android.content.res.TypedArray;
 import android.location.Location;
 import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -40,7 +41,7 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
     LocationCallback locationCallback;
     static final int LOCATION_PERMISSION_REQUEST = 101;
     Toolbar toolbar;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +49,9 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
 
         if (Build.VERSION.SDK_INT >= 23) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -78,6 +82,7 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
                 }
             }
         };
+
     }
 
     private void initMap() {
@@ -102,14 +107,14 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
         Toast.makeText(this, "Map is ready", Toast.LENGTH_SHORT).show();
         mMap = googleMap;
 
-        //don't really know how this works
-        //but it gets the height of the action bar (which is different depending on the device)
-        final TypedArray styledAttributes = getApplicationContext().getTheme().obtainStyledAttributes(
-                new int[] { android.R.attr.actionBarSize });
-        int mActionBarSize = (int) styledAttributes.getDimension(0, 0);
-        styledAttributes.recycle();
-
-        mMap.setPadding(0,mActionBarSize,0,0);
+//        //don't really know how this works
+//        //but it gets the height of the action bar (which is different depending on the device)
+//        final TypedArray styledAttributes = getApplicationContext().getTheme().obtainStyledAttributes(
+//                new int[] { android.R.attr.actionBarSize });
+//        int mActionBarSize = (int) styledAttributes.getDimension(0, 0);
+//        styledAttributes.recycle();
+//
+//        mMap.setPadding(0,mActionBarSize,0,0);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             Log.i("onMapReady", "permission has been granted");
@@ -128,6 +133,8 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
                 }
             });
         }
+
+        startLocationUpdates();
 
     }
 
@@ -149,18 +156,20 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
         }
     }
 
-    //run after onCreate method
-    @Override
-    protected void onResume() {
-        super.onResume();
-        startLocationUpdates();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        stopLocationUpdate();
-    }
+//    //run after onCreate method
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        Log.i("onResume", "started");
+//        startLocationUpdates();
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Log.i("onPause", "started");
+//        stopLocationUpdate();
+//    }
 
     private void stopLocationUpdate() {
         fusedLocationClient.removeLocationUpdates(locationCallback);
@@ -182,26 +191,33 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.action_bar, menu);
-        return super.onCreateOptionsMenu(menu);
+        menuInflater.inflate(R.menu.explore_toolbar, menu);
+        return true;
     }
 
     @TargetApi(Build.VERSION_CODES.M)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.hostEvent) {
-            Intent intent = new Intent(getApplicationContext(), CreateEventActivity.class);
-            startActivity(intent);
-        } else if (item.getItemId() == R.id.profile) {
-            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
-            startActivity(intent);
-        } else if (item.getItemId() == R.id.logout) {
-            ParseUser.logOut();
-
-            Intent intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page
-            startActivity(intent);
+        switch (item.getItemId()) {
+            case R.id.hostEvent:
+                Log.i("hostEvent", "clicked");
+                Intent intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+                startActivity(intent);
+                return true;
+                //profile is here for now
+            case R.id.profile:
+                intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.logout:
+                ParseUser.logOut();
+                intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page
+                startActivity(intent);
+                return true;
+            default:
+                Log.i("default", "happened");
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 }

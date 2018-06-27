@@ -4,11 +4,11 @@ import android.Manifest;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
@@ -19,20 +19,18 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
 import com.parse.FindCallback;
 import com.parse.GetDataCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
@@ -40,31 +38,27 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
-import org.w3c.dom.Text;
-
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.util.List;
 
 public class ProfileActivity extends AppCompatActivity {
 
     LinearLayout parentLinearLayout;
-    ImageButton profilePicImageButton;
+    ImageView profilePicImageView;
     LinearLayout nameLinearLayout;
     TextView nameTextView;
-    EditText isLookingForEditText;
+    TextView isLookingForText;
     LinearLayout hobbiesScrollLayout;
     LinearLayout interestedInScrollLayout;
     LinearLayout wentToScrollLayout;
     Button saveButton;
 
-    boolean profileChanged = false;
-    boolean profilePicChanged = false;
 
     static final int EXTERNAL_STORAGE_PERMISSION_REQUEST = 102;
     static final int EXTERNAL_STORAGE_REQUEST_CODE = 202;
 
     Bitmap bitmap;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,15 +69,27 @@ public class ProfileActivity extends AppCompatActivity {
 
         setTitle("Profile");
 
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         parentLinearLayout = findViewById(R.id.parentLinearLayout);
-        profilePicImageButton = findViewById(R.id.profilePicImageButton);
+        profilePicImageView = findViewById(R.id.profilePicImageView);
         nameLinearLayout = findViewById(R.id.nameLinearLayout);
         nameTextView = findViewById(R.id.nameTextView);
-        isLookingForEditText = findViewById(R.id.lookingForEditText);
+        isLookingForText = findViewById(R.id.lookingForText);
         hobbiesScrollLayout = findViewById(R.id.hobbiesScrollLayout);
         interestedInScrollLayout = findViewById(R.id.interestedInScrollLayout);
         wentToScrollLayout = findViewById(R.id.wentToScrollLayout);
         saveButton = findViewById(R.id.saveButton);
+
+//        //don't really know how this works
+//        //but it gets the height of the action bar (which is different depending on the device)
+//        final TypedArray styledAttributes = getApplicationContext().getTheme().obtainStyledAttributes(
+//                new int[] { android.R.attr.actionBarSize });
+//        int mActionBarSize = (int) styledAttributes.getDimension(0, 0);
+//        styledAttributes.recycle();
+//
+//        parentLinearLayout.setPadding(0,mActionBarSize,0,0);
 
         getName();
         getProfilePic();
@@ -94,33 +100,33 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (ParseUser.getCurrentUser().getString("isLookingFor") != null) {
-            Log.i("edit text", "non null");
-            //wasnt null previously and if is different now
-            if (!ParseUser.getCurrentUser().getString("isLookingFor").equals(isLookingForEditText.getText().toString())) {
-                Log.i("edit text", "changed from non null to ANOTher non null");
-                profileChanged = true;
-                saveButton.setVisibility(View.VISIBLE);
-            }
-            //if previously was null but now it isnt
-        } else if (ParseUser.getCurrentUser().getString("isLookingFor") == null &&
-                isLookingForEditText.getText().toString() != "") {
-            Log.i("edit text", "changed from NULL to non null");
-            profileChanged = true;
-            saveButton.setVisibility(View.VISIBLE);
-        } else if (profilePicChanged){
-            profileChanged = true;
-            saveButton.setVisibility(View.VISIBLE);
-        }
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        if (ParseUser.getCurrentUser().getString("isLookingFor") != null) {
+//            Log.i("edit text", "non null");
+//            //wasnt null previously and if is different now
+//            if (!ParseUser.getCurrentUser().getString("isLookingFor").equals(isLookingForEditText.getText().toString())) {
+//                Log.i("edit text", "changed from non null to ANOTher non null");
+//                profileChanged = true;
+//                saveButton.setVisibility(View.VISIBLE);
+//            }
+//            //if previously was null but now it isnt
+//        } else if (ParseUser.getCurrentUser().getString("isLookingFor") == null &&
+//                isLookingForEditText.getText().toString() != "") {
+//            Log.i("edit text", "changed from NULL to non null");
+//            profileChanged = true;
+//            saveButton.setVisibility(View.VISIBLE);
+//        } else if (profilePicChanged){
+//            profileChanged = true;
+//            saveButton.setVisibility(View.VISIBLE);
+//        }
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//    }
 
     private void getWentTo() {
         if (ParseUser.getCurrentUser().getList("pastEvents") != null) {
@@ -191,7 +197,8 @@ public class ProfileActivity extends AppCompatActivity {
     private void getIsLookingFor() {
         if (ParseUser.getCurrentUser().getString("isLookingFor") != null) {
             String statement = ParseUser.getCurrentUser().getString("isLookingFor");
-            isLookingForEditText.setText(statement);
+            isLookingForText.setText("\"" + statement +"\"");
+            Log.i("isLookingForText", "is not null");
         }
     }
 
@@ -203,8 +210,7 @@ public class ProfileActivity extends AppCompatActivity {
                 public void done(byte[] data, ParseException e) {
                     if (e == null && data != null) {
                         Bitmap bitmap = BitmapFactory.decodeByteArray(data,0,data.length);
-                        profilePicImageButton.setImageBitmap(bitmap);
-                        profilePicChanged = true;
+                        profilePicImageView.setImageBitmap(bitmap);
                     } else {
                         Log.i("getProfilePic", "could not get dp bitmap");
                     }
@@ -219,117 +225,126 @@ public class ProfileActivity extends AppCompatActivity {
         nameTextView.setText(name);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    public void profilePicClicked(View view) {
-        if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, EXTERNAL_STORAGE_PERMISSION_REQUEST);
-        } else {
-            selectPhoto();
-        }
-    }
-
-    public void selectPhoto() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(intent, EXTERNAL_STORAGE_REQUEST_CODE);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == EXTERNAL_STORAGE_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
-            Uri selectedPhoto = data.getData();
-            try {
-                bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedPhoto);
-                profilePicImageButton.setImageBitmap(bitmap);
-            } catch (Exception e) {
-                e.printStackTrace();
-                Toast.makeText(ProfileActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        switch (requestCode) {
-            case EXTERNAL_STORAGE_PERMISSION_REQUEST:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    selectPhoto();
-                } else {
-                    Toast.makeText(ProfileActivity.this, "You must accept external storage permissions to upload a photo!", Toast.LENGTH_SHORT).show();
-                }
-        }
-    }
-
-    public void saveProfilePic() {
-        //upload file onto parse server
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
-        byte[] byteArray = stream.toByteArray();
-        ParseFile file = new ParseFile("displayPicture.png", byteArray);
-        ParseUser.getCurrentUser().put("displayPicture", file);
-        ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
-            @Override
-            public void done(ParseException e) {
-                if (e == null) {
-                    Log.i("profile pic", "uploaded onto parse server");
-//                    Toast.makeText(CreateEventActivity.this, "Photo has been uploaded!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Log.i("profile pic", "error uploading onto parse server");
-//                    Toast.makeText(CreateEventActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
-
-    public void saveClicked(View view) {
-        if (profilePicChanged) {
-            saveProfilePic();
-        }
-        saveIsLookingFor();
-    }
-
-    public void saveIsLookingFor() {
-        if (ParseUser.getCurrentUser().getString("isLookingFor") != isLookingForEditText.getText().toString()) {
-            ParseUser.getCurrentUser().put("isLookingFor", isLookingForEditText.getText().toString());
-            ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
-                @Override
-                public void done(ParseException e) {
-                    if (e == null) {
-                        Log.i("is looking for", "saved");
-                    } else {
-                        Log.i("is looking for", "could not save, e = null");
-                    }
-                }
-            });
-        }
-    }
+//    @RequiresApi(api = Build.VERSION_CODES.M)
+//    public void profilePicClicked(View view) {
+//        if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+//            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, EXTERNAL_STORAGE_PERMISSION_REQUEST);
+//        } else {
+//            selectPhoto();
+//        }
+//    }
+//
+//    public void selectPhoto() {
+//        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+//        startActivityForResult(intent, EXTERNAL_STORAGE_REQUEST_CODE);
+//    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if (requestCode == EXTERNAL_STORAGE_REQUEST_CODE && resultCode == RESULT_OK && data != null) {
+//            Uri selectedPhoto = data.getData();
+//            try {
+//                bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedPhoto);
+//                profilePicImageButton.setImageBitmap(bitmap);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//                Toast.makeText(ProfileActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//    }
+//
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//
+//        switch (requestCode) {
+//            case EXTERNAL_STORAGE_PERMISSION_REQUEST:
+//                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//                    selectPhoto();
+//                } else {
+//                    Toast.makeText(ProfileActivity.this, "You must accept external storage permissions to upload a photo!", Toast.LENGTH_SHORT).show();
+//                }
+//        }
+//    }
+//
+//    public void saveProfilePic() {
+//        //upload file onto parse server
+//        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+//        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+//        byte[] byteArray = stream.toByteArray();
+//        ParseFile file = new ParseFile("displayPicture.png", byteArray);
+//        ParseUser.getCurrentUser().put("displayPicture", file);
+//        ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
+//            @Override
+//            public void done(ParseException e) {
+//                if (e == null) {
+//                    Log.i("profile pic", "uploaded onto parse server");
+////                    Toast.makeText(CreateEventActivity.this, "Photo has been uploaded!", Toast.LENGTH_SHORT).show();
+//                } else {
+//                    Log.i("profile pic", "error uploading onto parse server");
+////                    Toast.makeText(CreateEventActivity.this, "There is an issue uploading the photo. Please try again.", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
+//    }
+//
+//    public void saveClicked(View view) {
+//        if (profilePicChanged) {
+//            saveProfilePic();
+//        }
+//        saveIsLookingFor();
+//    }
+//
+//    public void saveIsLookingFor() {
+//        if (ParseUser.getCurrentUser().getString("isLookingFor") != isLookingForEditText.getText().toString()) {
+//            ParseUser.getCurrentUser().put("isLookingFor", isLookingForEditText.getText().toString());
+//            ParseUser.getCurrentUser().saveInBackground(new SaveCallback() {
+//                @Override
+//                public void done(ParseException e) {
+//                    if (e == null) {
+//                        Log.i("is looking for", "saved");
+//                    } else {
+//                        Log.i("is looking for", "could not save, e = null");
+//                    }
+//                }
+//            });
+//        }
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.action_bar, menu);
-        return super.onCreateOptionsMenu(menu);
+        menuInflater.inflate(R.menu.profile_toolbar, menu);
+        return true;
     }
 
     @TargetApi(Build.VERSION_CODES.M)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.editProfile) {
-            Intent intent = new Intent(getApplicationContext(), CreateEventActivity.class);
-            startActivity(intent);
-        } else if (item.getItemId() == R.id.profile) {
-            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
-            startActivity(intent);
-        } else if (item.getItemId() == R.id.logout) {
-            ParseUser.logOut();
-
-            Intent intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page
-            startActivity(intent);
+        switch (item.getItemId()) {
+            case R.id.editProfile:
+                Intent intent = new Intent(getApplicationContext(), EditProfileActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.hostEvent:
+                intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+                startActivity(intent);
+                return true;
+            //profile is here for now
+            case R.id.profile:
+                intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.logout:
+                ParseUser.logOut();
+                intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 
