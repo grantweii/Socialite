@@ -4,7 +4,7 @@
             "outputFile": "/Users/grant/Desktop/Socialite/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c447fc3676ad0fb4832f885880252bcb/res/values-v24/values-v24.xml",
+                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/9f991832dc3fd9aa35b13f8daa79fd0c/res/values-v24/values-v24.xml",
+                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/68875555aa941417f6b228147dddcaf8/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

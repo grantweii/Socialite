@@ -12,6 +12,7 @@ import android.os.Build;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -71,6 +72,39 @@ public class ProfileActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(3);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+             @Override
+             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                 switch (item.getItemId()) {
+                     case R.id.explore:
+                         Intent intent = new Intent(getApplicationContext(), ExploreActivity.class);
+                         startActivity(intent);
+                         return true;
+                     //messages and notification pages not implemented yet
+                     case R.id.messages:
+                         //                intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+                         //                startActivity(intent);
+                         return true;
+                     case R.id.notifications:
+                         //                intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+                         //                startActivity(intent);
+                         return true;
+                     case R.id.profile:
+//                         intent = new Intent(getApplicationContext(), ProfileActivity.class);
+//                         startActivity(intent);
+                         return true;
+                 }
+
+                 return false;
+             }
+         });
 
         parentLinearLayout = findViewById(R.id.parentLinearLayout);
         profilePicImageView = findViewById(R.id.profilePicImageView);
@@ -333,10 +367,10 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             //profile is here for now
-            case R.id.profile:
-                intent = new Intent(getApplicationContext(), ProfileActivity.class);
-                startActivity(intent);
-                return true;
+//            case R.id.profile:
+//                intent = new Intent(getApplicationContext(), ProfileActivity.class);
+//                startActivity(intent);
+//                return true;
             case R.id.logout:
                 ParseUser.logOut();
                 intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page

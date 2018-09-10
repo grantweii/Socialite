@@ -8,10 +8,10 @@
         android:icon="@drawable/host_event"
         app:showAsAction="always" />
 
-    <item
-        android:title="Profile"
-        android:id="@+id/profile"
-        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:title="Profile"-->
+        <!--android:id="@+id/profile"-->
+        <!--app:showAsAction="never" />-->
     <item
         android:title="Logout"
         android:id="@+id/logout"

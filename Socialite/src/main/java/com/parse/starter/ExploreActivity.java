@@ -52,6 +52,36 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(0);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.explore:
+//                        Intent intent = new Intent(getApplicationContext(), ExploreActivity.class);
+//                        startActivity(intent);
+                        return true;
+                    //messages and notification pages not implemented yet
+                    case R.id.messages:
+    //                intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+    //                startActivity(intent);
+                        return true;
+                    case R.id.notifications:
+    //                intent = new Intent(getApplicationContext(), CreateEventActivity.class);
+    //                startActivity(intent);
+                        return true;
+                    case R.id.profile:
+                        Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                        startActivity(intent);
+                        return true;
+                }
+
+                return false;
+            }
+        });
 
         if (Build.VERSION.SDK_INT >= 23) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -203,21 +233,17 @@ public class ExploreActivity extends AppCompatActivity implements OnMapReadyCall
                 Log.i("hostEvent", "clicked");
                 Intent intent = new Intent(getApplicationContext(), CreateEventActivity.class);
                 startActivity(intent);
-                return true;
-                //profile is here for now
-            case R.id.profile:
-                intent = new Intent(getApplicationContext(), ProfileActivity.class);
-                startActivity(intent);
-                return true;
+                break;
             case R.id.logout:
                 ParseUser.logOut();
                 intent = new Intent(getApplicationContext(), WelcomePageActivity.class); //logged out, move back to login page
                 startActivity(intent);
-                return true;
+                break;
             default:
                 Log.i("default", "happened");
                 return super.onOptionsItemSelected(item);
         }
+        return false;
     }
 
 }

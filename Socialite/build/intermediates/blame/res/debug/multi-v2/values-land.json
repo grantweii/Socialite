@@ -4,7 +4,7 @@
             "outputFile": "/Users/grant/Desktop/Socialite/Socialite/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0a7cb9c606c0c52af9cbf05651ab877e/res/values-land/values-land.xml",
+                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/0564eedcaee09102738aa99d05281331/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/c447fc3676ad0fb4832f885880252bcb/res/values-land/values-land.xml",
+                    "source": "/Users/grant/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6155539e7863ea89b5ebf36bbf4de63e/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

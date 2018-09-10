@@ -17,4 +17,6 @@
     <string name="title_activity_rider">Map</string>
     <string name="title_activity_driver_location">Map</string>
     <string name="title_activity_explore">Map</string>
+    <string name="title_activity_messages">MessagesActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
